@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cug.gpscheckgas.app.TaskFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#36BBB1">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#36BBB1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/radioUndo"
+                style="@style/navigation_style_top"
+                android:checked="true"
+                android:paddingLeft="0dp"
+                android:text="@string/undo"
+                android:background="@drawable/selector_top_tab"/>
+
+            <RadioButton
+                android:id="@+id/radioDone"
+                style="@style/navigation_style_top"
+                android:checked="false"
+                android:paddingLeft="0dp"
+                android:text="@string/done"
+                android:textSize="15dp"
+                android:background="@drawable/selector_top_tab" />
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+    <com.cug.gpscheckgas.util.ContainerViewPager
+        android:id="@+id/viewpager_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#f0f0f0" />
+
+</FrameLayout>
