@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.cug.gpscheckgas.app.MainActivity">
+
+    <com.cug.gpscheckgas.util.ContainerViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bottom_radiogroup_style"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioTask"
+            android:text="@string/task"
+            style="@style/navigation_style"
+            android:paddingLeft="0dp"
+            android:drawableTop="@drawable/selector_main_bottom_tab_first"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioLocation"
+            android:text="@string/position"
+            style="@style/navigation_style"
+            android:paddingLeft="0dp"
+            android:drawableTop="@drawable/selector_main_bottom_tab_second"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioFault"
+            android:text="@string/fault"
+            style="@style/navigation_style"
+            android:paddingLeft="0dp"
+            android:drawableTop="@drawable/selector_main_bottom_tab_third"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radioNotice"
+            android:text="@string/notice"
+            style="@style/navigation_style"
+            android:paddingLeft="0dp"
+            android:drawableTop="@drawable/selector_main_bottom_tab_forth"
+            android:checked="false"/>
+    </RadioGroup>
+
+
+</RelativeLayout>

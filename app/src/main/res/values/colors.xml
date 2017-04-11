@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 底部导航页的文字变化 -->
+    <color name="bottom_text_uncheck">#555555</color>
+    <color name="bottom_text_checked">#36BBB1</color>
+
+    <color name="top_text_uncheck">#fffdff</color>
+    <color name="top_text_checked">#36BBB1</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="spinner_unchecked">#fffdff</color>
+    <color name="spinner_checked">#f0f0f0</color>
+    <color name="spinner_text_unchecked">#808080</color>
+    <color name="spinner_text_checked">#36BBB1</color>
+
+    <color name="question_title">#FF9D09</color>
+    <color name="question_radio">#808080</color>
+</resources>

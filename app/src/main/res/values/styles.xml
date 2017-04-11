@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+    <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- 底部导航按钮的样式 -->
+    <style name="navigation_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@color/selector_main_bottom_tab_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 顶部导航按钮的样式 -->
+    <style name="navigation_style_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_main_top_tab_text</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+</resources>

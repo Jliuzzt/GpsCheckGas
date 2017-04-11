@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.cug.gpscheckgas.app.FaultFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#36BBB1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fault"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/icon_camera_white" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/icon_video_white" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/submit"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:fadingEdge="vertical"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:visibility="visible">-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/faultText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="left|top"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:scrollbars="vertical">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/time"-->
+                    <!--android:textSize="15dp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/time"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/selector_edittext"-->
+                    <!--android:inputType="textMultiLine"-->
+                    <!--android:textSize="15dp" />-->
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device_id"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/deviceid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_edittext"
+                    android:inputType="textMultiLine"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fault"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/fault"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_edittext"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fault_pic"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fault_pic"
+                    android:textSize="15dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/picView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#d2000000"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitStart" />
+
+                <ImageButton
+                    android:id="@+id/closePic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/icon_closepic" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/submit"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginBottom="1dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="#81C0C0"-->
+    <!--android:text="@string/submit"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="15dp" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>
+
+</FrameLayout>

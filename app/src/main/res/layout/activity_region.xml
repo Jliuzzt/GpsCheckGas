@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cug.gpscheckgas.app.RegionActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#36BBB1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sheetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/region"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back" />
+
+
+        <Button
+            android:id="@+id/finish"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_save"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/submit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_submit"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/intro_style"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/task_type"
+            android:focusable="false"
+            android:text="@string/region_intro"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/sheetIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="false"
+            android:text="区域简介"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner_style">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/choose_time"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="10dp"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true" />
+
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/activity_line"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="@drawable/dotted_line_gray"-->
+    <!--android:orientation="vertical" />-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/loading"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/regiontask"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:columnWidth="100dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/id_marker_info"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CC4e5a6b"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/regionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:text="巡线点名称"
+                android:textColor="#FFF5EB"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_map_bottom"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/regionIntro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="巡线点简介"
+                        android:textColor="#FFF5EB" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/record"
+                    android:background="#ccadadad"/>
+                <Button
+                    android:id="@+id/record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:text="@string/open_record"
+                    android:textColor="#FFF5EB"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_button_sub"
+            android:text="@string/qrcode_check"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

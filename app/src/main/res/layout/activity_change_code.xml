@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context="com.cug.gpscheckgas.app.ChangeCodeActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#36BBB1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/change_code"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/listview_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/old_code"
+                android:textStyle="bold"
+                android:id="@+id/textView1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/oldCode"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/listview_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_code"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/newCode"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/listview_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_code_again"
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/newCodeAgain"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/finish_change"
+        android:textColor="#ffffff"
+        android:id="@+id/comfirm"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#FF9D09"/>
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true" >-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--style="?android:attr/progressBarStyleHorizontal"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="#00000000"-->
+            <!--android:max="100"-->
+            <!--android:progress="0"-->
+            <!--android:progressDrawable="@drawable/progress_selector"/>-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/downLoadBtn"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@drawable/button_normal"-->
+            <!--android:text="下载"-->
+            <!--android:textSize="12dp"/>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants">
+    <!--android:paddingBottom="3dp"-->
+    <!--android:paddingTop="3dp">-->
+
+    <LinearLayout
+        android:id="@+id/task_item"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/listview_style"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/task_type"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/task_type"
+                android:focusable="false"
+                android:text="@string/task_type"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="任务地点"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="完成时间"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="70dp"
+                android:text="任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容"
+                android:textColor="#8B8682" />
+
+            <Button
+                android:id="@+id/download"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_normal"
+                android:text="@string/download"
+                android:textColor="#FF9D09" />
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/progressBar"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignTop="@+id/download"-->
+                <!--android:background="#00000000"-->
+                <!--android:max="100"-->
+                <!--android:progress="0"-->
+                <!--android:progressDrawable="@drawable/progress_selector" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

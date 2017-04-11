@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:paddingTop="3dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:padding="10dp"
+        android:background="@drawable/spinner_style"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="xxxxxxxx"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textColor="#555555"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="205dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="A.站控机参数显示值与现场工艺参数是否相符"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textColor="#555555"/>
+
+    </LinearLayout>
+
+
+
+
+
+        <!--<TextView
+            android:id="@+id/question"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="A.站控机参数显示值与现场工艺参数是否相符"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textColor="#555555"/>-->
+
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/answer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/normal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="正常"-->
+                <!--android:textColor="@color/question_radio"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/abnormal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_marginLeft="100dp"-->
+                <!--android:text="异常"-->
+                <!--android:textColor="@color/question_radio" />-->
+        <!--</RadioGroup>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView1"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="请选择或输入结果："-->
+                <!--android:textColor="#555555" />-->
+
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/possAsws"
+                android:layout_weight="1"
+                android:animationCache="true"
+                android:drawSelectorOnTop="true"  />
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="45dp"
+                android:textColor="#555555"
+                android:background="@drawable/selector_edittext"
+                android:hint="@string/input_result"
+                android:textSize="15dp"
+                android:textColorHint="#AAAAAA"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
